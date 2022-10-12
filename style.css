@@ -1,0 +1,235 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&family=Silkscreen&display=swap');
+
+body{
+background: radial-gradient(#16013E, #3C1C78);
+font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+
+}
+
+
+.outer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.form-body{
+margin-top: 150px;
+background:#0d0d0d;
+border-top-right-radius: 40px;
+width:600px;
+-webkit-box-shadow: 6px 12px 24px 6px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 6px 12px 24px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 6px 12px 24px 6px rgba(0, 0, 0, 0.25);
+
+}
+.form{
+	padding-top: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+input{
+	font-family: "Roboto Mono", "Arial", "Helvetica Neue", sans-serif;
+	
+
+	font-weight: 600;
+	font-size: 20px;
+	margin-top: 30px;
+	border:none;
+	border-bottom: 1px solid #e6e6e6;
+	background:transparent;
+	padding-bottom: 8px;
+	color:white;
+
+}
+input:hover{
+	font-size:20.3px;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color:#e6e6e6;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:#e6e6e6;}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color:#e6e6e6;
+}
+
+select, textarea{
+	margin-top: 30px;
+}
+
+.container{
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.inner{
+    width:80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  padding: 40px;
+  -webkit-box-shadow: 6px 12px 24px 6px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 6px 12px 24px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 6px 12px 24px 6px rgba(0, 0, 0, 0.25) ;
+border-radius: 2px;
+}
+
+.root{
+  width: 100%;
+  display: flex;
+    flex-direction: row;
+}
+
+.display-user-style {
+  margin: 20px;
+  padding: 20px;
+  width: 250px;
+ 
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+   background: radial-gradient(#16013E, #3C1C78);
+   font-size: 22px;
+   color:white;
+   position: relative;
+}
+
+.display-user-style:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+
+
+.delete-button{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border:none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: #714BB9;
+  font-weight: 500;
+  color: white;
+  cursor:pointer;
+}
+
+.submit-btn{
+  background: radial-gradient( #16013E, #3C1C78);
+  font-weight: 500;
+  color: white;
+  cursor:pointer;
+  border:none;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 2px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-shadow: 6px 12px 24px 6px rgba(60, 28, 120, 0.25);
+  -moz-box-shadow: 6px 12px 24px 6px rgba(60, 28, 120, 0.25);
+  box-shadow: 6px 12px 24px 6px rgba(60, 28, 120, 0.25);
+}
+
+h6{
+  margin:5px !important;
+
+}
+
+h5{
+
+  margin: 0 -18px;
+  background-color: transparent;
+  display: none;
+  overflow: hidden;
+padding: 20px;
+
+}
+
+.show{
+  display: block;
+  font-size:14px;
+}
+
+
+.message-box{
+  visibility: hidden;
+  color:#e6e6e6;
+}
+
+.message-box-2{
+  visibility: hidden;
+  color:#e6e6e6;
+}
+
+#textArea{
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  border:none;
+  width: 75%;
+  margin-top: 50px;
+
+
+}
+
+.selector{
+
+  margin-top: 70px;
+}
+
+#adress{
+  margin-top: 50px;
+}
+.custom-select {
+  position: relative;
+  display: block;
+  max-width: 400px;
+  min-width: 180px;
+  margin: 0 auto;
+  border: 1px solid #3C1C78;
+  background-color: #16013E;
+  z-index: 10;
+}
+.custom-select select {
+  border: none;
+  outline: none;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  padding: 12px 55px 15px 15px;
+  font-size: 14px;
+  color: #714BB9;
+}
+.custom-select:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  line-height: 38px;
+  content: "∨";
+  text-align: center;
+  color: #714BB9;
+  font-size: 24px;
+  border-left: 1px solid #3C1C78;
+  z-index: -1;
+}
