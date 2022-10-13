@@ -4,6 +4,11 @@
 // prevent reload on submit.
 function mySubmitFunction(e) {
   	e.preventDefault();
+	  var getForm = document.getElementById('form');
+    getForm.reset();
+    document.querySelectorAll('.message-box')[0].style.visibility = "hidden";
+    document.querySelectorAll('.message-box')[1].style.visibility = "hidden";
+    document.querySelector('.message-box-2').style.visibility = "hidden";
   	return false;
 }
 
