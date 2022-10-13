@@ -49,6 +49,7 @@ function storeData() {
 
 //render validated accounts.
     if(validName == true && validLname == true && validAdress == true ){
+      document.getElementById('inner').style.visibility = "visible";
 
       id++;
       idNumber = JSON.stringify(id);
@@ -112,6 +113,7 @@ function storeData() {
 window.onload = function() {
 
 	if(window.localStorage.length > 0 ){
+		document.getElementById('inner').style.visibility = "visible";
 		var toInteger = Object.keys(window.localStorage);
 		var maxIdNumb = Math.max(...toInteger);
 		id = maxIdNumb;
@@ -164,7 +166,10 @@ window.onload = function() {
 	    });
 
 
-    };
+    }
+	else{ 
+		document.getElementById('inner').style.visibility = "hidden";
+	}
 
 };
 
